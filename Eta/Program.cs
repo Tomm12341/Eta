@@ -16,8 +16,8 @@ namespace Eta
             persona.DataNascita = DateTime.Parse(Console.ReadLine());
 
             Console.WriteLine("hai {0} anni", persona.CalcolaEta());
-            Console.ReadLine
-                ();
+            Console.ReadLine();
+                
         }
     }
 }

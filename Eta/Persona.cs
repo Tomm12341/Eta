@@ -16,14 +16,12 @@ namespace Eta
             int Anni= DateTime.Now.Year-DataNascita.Year;
 
             if (DateTime.Now.Month > DataNascita.Month || DateTime.Now.Month == DataNascita.Month && DateTime.Now.Day > DataNascita.Day)
-            {
-                Anni = Anni - 1;
-                return (int)Anni;
-
+            { 
+                return Anni-1;
             }
             else if (DateTime.Now.Month == DataNascita.Month && DateTime.Now.Day==DataNascita.Day || DateTime.Now.Month > DataNascita.Month || DateTime.Now.Month == DataNascita.Month && DateTime.Now.Day > DataNascita.Day)
             {
-                return (int)Anni;
+                return Anni;
             }
            
             
